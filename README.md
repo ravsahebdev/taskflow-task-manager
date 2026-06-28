@@ -94,7 +94,7 @@ While building this project, I practiced:
 
 ## 👨‍💻 Author
 
-**Ravsaheb Dev**
+**Ravsaheb Vagre**
 
 🌐 GitHub: https://github.com/ravsahebdev
 
