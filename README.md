@@ -41,13 +41,13 @@ The application provides a clean and modern interface for managing daily tasks e
 
 ## 🌐 Live Demo
 
-https://YOUR_USERNAME.github.io/taskflow-task-manager/
+https://ravsahebdev.github.io/taskflow-task-manager/
 
 ---
 
 ## 💻 GitHub Repository
 
-https://github.com/YOUR_USERNAME/taskflow-task-manager
+https://github.com/ravsahebdev/taskflow-task-managerps://github.com/YOUR_USERNAME/taskflow-task-manager
 
 ---
 
