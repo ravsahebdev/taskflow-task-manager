@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow — Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================================= -->
+    <!-- HEADER -->
+    <!-- ================================= -->
+    <header class="header">
+        <div class="header-left">
+            <span class="logo">⚡ TaskFlow</span>
+        </div>
+        <div class="header-right">
+            <span class="counter-chip">✅ <span id="completedCount">0</span></span>
+            <span class="counter-chip">⏳ <span id="pendingCount">0</span></span>
+            <span class="counter-chip">📋 <span id="totalCount">0</span></span>
+            <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+                🌙
+            </button>
+        </div>
+    </header>
+
+    <!-- ================================= -->
+    <!-- MAIN CONTENT -->
+    <!-- ================================= -->
+    <main class="main-content">
+
+        <!-- ===== TASK FORM ===== -->
+        <section class="card form-section">
+            <h2 class="section-title">➕ Create New Task</h2>
+            <form id="taskForm" class="form-grid">
+                <input type="text" id="taskInput" class="input-field" placeholder="What do you want to do?">
+                <select id="categorySelect" class="input-field">
+                    <option value="work">💼 Work</option>
+                    <option value="personal">🏠 Personal</option>
+                    <option value="study" selected>📚 Study</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+                <button type="button" id="clearAllBtn" class="btn btn-danger">🗑 Clear All</button>
+            </form>
+        </section>
+
+        <!-- ===== SEARCH & FILTER ===== -->
+        <section class="card filter-section">
+            <div class="filter-wrapper">
+                <input type="text" id="searchInput" class="input-field search-input" placeholder="🔍 Search tasks...">
+                <div class="filter-tabs" role="tablist">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="work">💼 Work</button>
+                    <button class="filter-btn" data-filter="personal">🏠 Personal</button>
+                    <button class="filter-btn" data-filter="study">📚 Study</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TASK LIST ===== -->
+        <section class="card tasks-section">
+            <div class="tasks-header">
+                <h2 class="section-title">📋 Your Tasks</h2>
+                <span class="task-count" id="taskCount">0 tasks</span>
+            </div>
+            <div id="taskContainer" class="task-grid" aria-live="polite">
+                <div class="empty-state" id="emptyState">
+                    <span class="empty-icon">📋</span>
+                    <h3>No tasks yet</h3>
+                    <p>Add your first task above! 🚀</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================= -->
+    <!-- FOOTER -->
+    <!-- ================================= -->
+    <footer class="footer">
+        <p>Built with ❤️ using Vanilla JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
